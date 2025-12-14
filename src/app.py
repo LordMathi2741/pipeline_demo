@@ -1,6 +1,6 @@
 
 from pathlib import Path
-from algorithms.djikstra import djikstra, shortest_path, build_graph_from_routes
+from algorithms.djikstra import shortest_path, build_graph_from_routes
 
 if "main" in __name__:
     path = Path("src/data/routes.json")

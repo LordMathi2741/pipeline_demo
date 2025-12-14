@@ -3,9 +3,13 @@ on:
   push:
     branches:
       - main
+      - develop
+      - feature/*
   pull_request:
     branches:
       - main
+      - develop
+      - feature/*
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -22,8 +26,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r src/requirements.txt
+          pip install -r requirements.txt
 
       - name: Run tests with coverage
         run: |
-          pytest src/tests/
+          pytest src/tests/test.py

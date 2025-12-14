@@ -5,7 +5,7 @@ from algorithms.djikstra import build_graph_from_routes, shortest_path
 
 @pytest.fixture
 def routes_path():
-    return Path(__file__).resolve().parents[1] / "src" / "data" / "routes.json"
+    return Path(__file__).resolve().parents[1] / "data" / "routes.json"
 
 
 def test_distance(routes_path):
