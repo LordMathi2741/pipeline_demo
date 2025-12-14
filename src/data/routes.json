@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "id": "R-001",
+      "origin": "Central",
+      "destination": "Norte",
+      "stops": ["Parque", "Rio", "Bosque"],
+      "distance_km": 18.4,
+      "travel_time_min": 32
+    },
+    {
+      "id": "R-002",
+      "origin": "Central",
+      "destination": "Oeste",
+      "stops": ["Parque", "Plaza", "Mercado"],
+      "distance_km": 11.2,
+      "travel_time_min": 19
+    },
+    {
+      "id": "R-003",
+      "origin": "Central",
+      "destination": "Sur",
+      "stops": ["Jardin", "Terminal Sur", "Bosque"],
+      "distance_km": 13.1,
+      "travel_time_min": 23
+    },
+    {
+      "id": "R-004",
+      "origin": "Oeste",
+      "destination": "Este",
+      "stops": ["Plaza", "Parque", "Rio", "Puente"],
+      "distance_km": 22.7,
+      "travel_time_min": 39
+    },
+    {
+      "id": "R-005",
+      "origin": "Norte",
+      "destination": "Sur",
+      "stops": ["Rio", "Parque", "Jardin", "Terminal Sur"],
+      "distance_km": 20.3,
+      "travel_time_min": 36
+    },
+    {
+      "id": "R-006",
+      "origin": "Sur",
+      "destination": "Este",
+      "stops": ["Terminal Sur", "Bosque", "Rio", "Puente"],
+      "distance_km": 19.6,
+      "travel_time_min": 34
+    },
+    {
+      "id": "R-007",
+      "origin": "Norte",
+      "destination": "Oeste",
+      "stops": ["Bosque", "Parque", "Plaza", "Mercado"],
+      "distance_km": 17.9,
+      "travel_time_min": 31
+    },
+    {
+      "id": "R-008",
+      "origin": "Bosque",
+      "destination": "Isla",
+      "stops": ["Rio", "Puente", "Puerto", "Muelle"],
+      "distance_km": 25.4,
+      "travel_time_min": 45
+    }
+  ]
+}
