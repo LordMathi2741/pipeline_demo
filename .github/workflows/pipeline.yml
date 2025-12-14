@@ -1,4 +1,3 @@
-version: "1.0"
 "on":
     push:
       branches:
@@ -10,19 +9,21 @@ version: "1.0"
    test:
       "runs-on": ubuntu-latest
       steps:
-       - name: "Configure environment"
-         exec: |
+        - name: "Checkout code"
+          uses: actions/checkout@v2
+        - name: "Set up Python environment"
+          run: |
             echo "Setting up Python environment"
             python -m venv venv
             source venv/bin/activate
             pip install -r requirements.txt
             echo "Environment setup complete"
-       - name: "Run tests with coverage"
-         exec: |
-              echo "Running tests with coverage"
-              source venv/bin/activate
-              pytest tests/ --cov=src --cov-report=xml
-              echo "Tests and coverage complete"
+        - name: "Run tests with coverage"
+          run: |
+               echo "Running tests with coverage"
+               source venv/bin/activate
+               pytest tests/ --cov=src --cov-report=xml
+               echo "Tests and coverage complete"
         
   
 
